@@ -24,14 +24,14 @@ public class Application2 {
 
         /* 과일 클래스 생성 */
        class Fruit {
-            String korName = "";
-            int price;
+           String korName;
+           int price;
 
-            Fruit(String name, int price) {
-                this.korName = name;
-                this.price = price;
-            }
-        }
+           Fruit(String name, int price) {
+               this.korName = name;
+               this.price = price;
+           }
+       }
 
         /* 과일 판매가 및 이름 설정 */
         Fruit apple = new Fruit("사과", 1000);
@@ -44,7 +44,7 @@ public class Application2 {
         String name = scAnything.nextLine();
         Fruit selectedFruit;
 
-        if (Objects.equals(name, apple.korName)) {
+       if (Objects.equals(name, apple.korName)) {
             selectedFruit = apple;
         } else if (Objects.equals(name, banana.korName)) {
             selectedFruit = banana;
@@ -56,6 +56,7 @@ public class Application2 {
             System.out.println("준비된 상품이 없습니다.");
             return;
         }
+
         System.out.println(selectedFruit.korName + "의 가격은 " + selectedFruit.price + "원 입니다.");
     }
 }
