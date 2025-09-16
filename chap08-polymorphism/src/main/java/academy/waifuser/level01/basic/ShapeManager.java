@@ -3,14 +3,14 @@ package academy.waifuser.level01.basic;
 import java.util.Arrays;
 
 public class ShapeManager {
-    private Shape[] shapes = new Shape[3];
+    private Shape[] shapes = new Shape[10];
     private int index = 0;
 
     public void addShape(Shape shape) {
         /* 배열에 전달 된 Shape를 추가. 단, 배열의 크기가 부족할 경우 2배로 늘려서 추가. */
-        /*if (index == shapes.length-1) {
+        if (index == shapes.length-1) {
             shapes = Arrays.copyOf(shapes, shapes.length * 2);
-        }*/
+        }
         shapes[index] = shape;
         index++;
     }
