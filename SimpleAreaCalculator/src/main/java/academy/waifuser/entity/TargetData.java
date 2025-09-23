@@ -17,7 +17,7 @@ public abstract class TargetData implements Shape {
 
     public abstract void showGeoPoint();
 
-    // 위도/경도 → 데카르트 좌표 변환, 자식 클래스에서 상속받아 구현
+    // 위도/경도 > 데카르트 좌표 변환, 자식 클래스에서 상속받아 구현
     public abstract void convertToCartesian();
 
     public String getName() {
